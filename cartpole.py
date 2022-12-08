@@ -13,10 +13,6 @@ def bins(clip_min, clip_max, num):
 
 # 各値を離散値に変換
 def digitize_state(observation):
-    #cart_pos=0.01497125
-    #cart_v=0.03562966
-    #pole_angle=-0.0273448
-    #pole_v=-0.01692216
     cart_pos, cart_v, pole_angle, pole_v= observation
     digitized = [
         np.digitize(cart_pos, bins=bins(-2.4, 2.4, num_dizitized)),
