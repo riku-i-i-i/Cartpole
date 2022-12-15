@@ -127,5 +127,5 @@ for episode in range(num_episodes):  #試行数分繰り返す
     #        isrender = 1
     #    islearned=1;
 
-if islearned:
+if islearned: 
     np.savetxt('final_x.csv', final_x, delimiter=",")
